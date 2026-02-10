@@ -21,7 +21,7 @@ Quick reference for managing GitLab tokens, releases, and package-hosted assets.
 ### Direct links to the token configuration page
 
 - **GitLab.com** [Personal access tokens](https://gitlab.com/-/user_settings/personal_access_tokens)
-- **Self-managed / private GitLab instance**  [`https://<your-gitlab-domain>/-/user_settings/personal_access_tokens`](`https://<your-gitlab-domain>/-/user_settings/personal_access_tokens`)
+- **Self-managed / private GitLab instance** `https://<your-gitlab-domain>/-/user_settings/personal_access_tokens`
 
 ### Steps
 
