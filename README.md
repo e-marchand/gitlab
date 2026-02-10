@@ -15,13 +15,13 @@ Quick reference for managing GitLab tokens, releases, and package-hosted assets.
 ## Creating a Personal Access Token (PAT)
 
 ### Official documentation
-- GitLab docs:   https://docs.gitlab.com/user/profile/personal_access_tokens/
-- Token guide Gitlab: https://about.gitlab.com/blog/the-ultimate-guide-to-token-management-at-gitlab/
+- GitLab docs: [Personal access tokens](https://docs.gitlab.com/user/profile/personal_access_tokens/)
+- Token guide: [The ultimate guide to token management at GitLab](https://about.gitlab.com/blog/the-ultimate-guide-to-token-management-at-gitlab/)
 
 ### Direct links to the token configuration page
 
-- **GitLab.com**  https://gitlab.com/-/user_settings/personal_access_tokens
-- **Self-managed / private GitLab instance**    `https://<your-gitlab-domain>/-/user_settings/personal_access_tokens`
+- **GitLab.com** [Personal access tokens](https://gitlab.com/-/user_settings/personal_access_tokens)
+- **Self-managed / private GitLab instance**  [https://<your-gitlab-domain>/-/user_settings/personal_access_tokens](https://<your-gitlab-domain>/-/user_settings/personal_access_tokens)
 
 ### Steps
 
@@ -39,14 +39,14 @@ Quick reference for managing GitLab tokens, releases, and package-hosted assets.
 
 ### Alternative
 
-- OAuth: https://docs.gitlab.com/api/oauth2/
+- [GitLab OAuth2 API](https://docs.gitlab.com/api/oauth2/)
 
 ---
 
 ## Creating a Release
 
 ### Official documentation
-- GitLab Releases:  https://docs.gitlab.com/user/project/releases/
+- [GitLab Project releases](https://docs.gitlab.com/user/project/releases/)
 
 ### What is a release in GitLab?
 
@@ -84,19 +84,19 @@ If you want GitLab itself to host your files, use the **Package Registry**.
 
 ### Official documentation
 
-- Package Registry: https://docs.gitlab.com/user/packages/package_registry/
-- Generic Package Registry:  https://docs.gitlab.com/user/packages/generic_packages/
+- [GitLab Package Registry](https://docs.gitlab.com/user/packages/package_registry/)
+- [GitLab Generic Package Registry](https://docs.gitlab.com/user/packages/generic_packages/)
 
 ### Typical workflow
 
 1. **Build your file** (for example: `MyComponent.zip`)
 2. **Upload it to the Generic Package Registry BY code/command** 
   - look at documentation for cURL command
-  - or 4D code example https://gist.github.com/e-marchand/b218af0cca0d23f9b0399f42f282221f
+  - or [4D example](https://gist.github.com/e-marchand/b218af0cca0d23f9b0399f42f282221f)
 4. Deploy > Package Registry to see the result
 5. **Use the package URL** as a release asset link
 6. **Associate it with the same Git tag**
-Example package URL to download using API: `https://<host>/api/v4/projects/<encoded-project-path>/packages/generic/MyComponent/1.0.0/MyComponent.zip`
+Example package URL to download using API: `[https://<host>/api/v4/projects/<encoded-project-path>/packages/generic/MyComponent/1.0.0/MyComponent.zip](https://<host>/api/v4/projects/<encoded-project-path>/packages/generic/MyComponent/1.0.0/MyComponent.zip)`
 
 ---
 
@@ -135,10 +135,10 @@ The **asset name** is typically the **project name** or artifact name.
 ### 🔗 Official documentation
 
 - GitHub Releases API 
-  - "Get the latest release": https://docs.github.com/en/rest/releases/releases#get-the-latest-release
-  - https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases
-  - https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
-- GitLab Releases API: https://docs.gitlab.com/ee/api/releases/
+  - "Get the latest release": [GitHub REST Releases](https://docs.github.com/en/rest/releases/releases#get-the-latest-release)
+  - [Linking to releases](https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases)
+  - [Managing releases](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
+- [Releases API](https://docs.gitlab.com/ee/api/releases/)
 
 ### 🗝️ Key difference
 
