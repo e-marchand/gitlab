@@ -6,8 +6,8 @@ Quick reference for managing GitLab tokens, releases, and package-hosted assets.
 1. [Creating a Personal Access Token (PAT)](#creating-a-personal-access-token-pat)
 2. [Creating a Release](#creating-a-release)
 3. [Release Assets in GitLab (Important Difference vs GitHub)](#release-assets-in-gitlab-important-difference-vs-github)
-4. [Uploading Files Using the Package Registry](#uploading-files-using-the-package-registry)
-5. [How to Attach Files to a Release (Recommended Approach)](#how-to-attach-files-to-a-release-recommended-approach)
+4. [How to Attach Files to a Release (Recommended Approach)](#how-to-attach-files-to-a-release-recommended-approach)
+5. [Uploading Files Using the Package Registry](#uploading-files-using-the-package-registry)
 6. [GitHub vs GitLab: What "Latest Release" Really Means](#github-vs-gitlab-what-latest-release-really-means)
 
 ---
@@ -21,7 +21,7 @@ Quick reference for managing GitLab tokens, releases, and package-hosted assets.
 ### Direct links to the token configuration page
 
 - **GitLab.com** [Personal access tokens](https://gitlab.com/-/user_settings/personal_access_tokens)
-- **Self-managed / private GitLab instance**  [https://<your-gitlab-domain>/-/user_settings/personal_access_tokens](https://<your-gitlab-domain>/-/user_settings/personal_access_tokens)
+- **Self-managed / private GitLab instance**  [`https://<your-gitlab-domain>/-/user_settings/personal_access_tokens`](`https://<your-gitlab-domain>/-/user_settings/personal_access_tokens`)
 
 ### Steps
 
@@ -70,36 +70,6 @@ A release is:
 
 ---
 
-## Uploading Files Using the Package Registry
-
-If you want GitLab itself to host your files, use the **Package Registry**.
-
-### Why use the Package Registry?
-
-- Files are stored inside GitLab
-- Access is authenticated
-- URLs are stable and versioned
-- Perfect for associating binaries with a release tag
-- Not limited like GitHub to some languages
-
-### Official documentation
-
-- [GitLab Package Registry](https://docs.gitlab.com/user/packages/package_registry/)
-- [GitLab Generic Package Registry](https://docs.gitlab.com/user/packages/generic_packages/)
-
-### Typical workflow
-
-1. **Build your file** (for example: `MyComponent.zip`)
-2. **Upload it to the Generic Package Registry BY code/command** 
-  - look at documentation for cURL command
-  - or [4D example](https://gist.github.com/e-marchand/b218af0cca0d23f9b0399f42f282221f)
-4. Deploy > Package Registry to see the result
-5. **Use the package URL** as a release asset link
-6. **Associate it with the same Git tag**
-Example package URL to download using API: `[https://<host>/api/v4/projects/<encoded-project-path>/packages/generic/MyComponent/1.0.0/MyComponent.zip](https://<host>/api/v4/projects/<encoded-project-path>/packages/generic/MyComponent/1.0.0/MyComponent.zip)`
-
----
-
 ## Release Assets in GitLab (Important Difference vs GitHub)
 
 ### Key difference
@@ -129,6 +99,36 @@ To associate a file (binary, installer, archive) with a release:
 The **asset name** is typically the **project name** or artifact name.
 
 ---
+
+## Uploading Files Using the Package Registry
+
+If you want GitLab itself to host your files, use the **Package Registry**.
+
+### Why use the Package Registry?
+
+- Files are stored inside GitLab
+- Access is authenticated
+- URLs are stable and versioned
+- Perfect for associating binaries with a release tag
+- Not limited like GitHub to some languages
+
+### Official documentation
+
+- [GitLab Package Registry](https://docs.gitlab.com/user/packages/package_registry/)
+- [GitLab Generic Package Registry](https://docs.gitlab.com/user/packages/generic_packages/)
+
+### Typical workflow
+
+1. **Build your file** (for example: `MyComponent.zip`)
+2. **Upload it to the Generic Package Registry BY code/command** 
+  - look at documentation for cURL command
+  - or [4D example](https://gist.github.com/e-marchand/b218af0cca0d23f9b0399f42f282221f)
+4. Deploy > Package Registry to see the result
+5. **Use the package URL** as a release asset link
+6. **Associate it with the same Git tag**
+Example package URL to download using API: `[https://<host>/api/v4/projects/<encoded-project-path>/packages/generic/MyComponent/1.0.0/MyComponent.zip](https://<host>/api/v4/projects/<encoded-project-path>/packages/generic/MyComponent/1.0.0/MyComponent.zip)`
+
+----
 
 ## GitHub vs GitLab: What "Latest Release" Really Means
 
