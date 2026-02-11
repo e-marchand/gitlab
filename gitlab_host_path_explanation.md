@@ -79,7 +79,7 @@ This is the most reliable and predictable solution.
 
 ### Option 2 --- Auto-detect (best effort)
 
--   Try detecting `/api/v4/version`.
+-   Try detecting `/api/v4/version`. /!\ BUT NEED TOKEN
 -   If not found, try with the first path segment as prefix.
 -   Suggest detected base URL to the user.
 -   Let the user confirm or correct it.
