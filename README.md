@@ -182,3 +182,4 @@ This has direct consequences for automation tools and package managers, which mu
 ## Others
 
 - [Why Selecting the GitLab Host Matters](gitlab_host_path_explanation.md)
+- [GitLab CI/CD: Pipelines and Runners](gitlab_ci_explanation.md)
