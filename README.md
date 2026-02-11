@@ -9,6 +9,7 @@ Quick reference for managing GitLab tokens, releases, and package-hosted assets.
 4. [How to Attach Files to a Release (Recommended Approach)](#how-to-attach-files-to-a-release-recommended-approach)
 5. [Uploading Files Using the Package Registry](#uploading-files-using-the-package-registry)
 6. [GitHub vs GitLab: What "Latest Release" Really Means](#github-vs-gitlab-what-latest-release-really-means)
+7. [Other pages](#others)
 
 ---
 
@@ -177,3 +178,7 @@ When working with GitLab:
    - **Highest** semantic version (custom logic required)
 
 This has direct consequences for automation tools and package managers, which must implement additional sorting or filtering logic.
+
+## Others
+
+- [Why Selecting the GitLab Host Matters](gitlab_host_path_explanation.md)
