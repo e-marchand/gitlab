@@ -30,11 +30,13 @@ Project path:
 
 Repository example:
 
-    https://a.server/gitlab/p1/p2/p3
+    - https://a.server/gitlab/p2/p3
+    - https://a.server/gitlab/p2/p4/p5
 
 Project path:
 
-    p1/p2/p3
+    - p2/p3
+    - p2/p4/p5
 
 ------------------------------------------------------------------------
 
