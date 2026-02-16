@@ -10,6 +10,7 @@ Quick reference for managing GitLab tokens, releases, and package-hosted assets.
 5. [Uploading Files Using the Package Registry](#uploading-files-using-the-package-registry)
 6. [GitHub vs GitLab: What "Latest Release" Really Means](#github-vs-gitlab-what-latest-release-really-means)
 7. [Other pages](#others)
+8. [CLI for GitLab](#cli)
 
 ---
 
@@ -183,3 +184,18 @@ This has direct consequences for automation tools and package managers, which mu
 
 - [Why Selecting the GitLab Host Matters](gitlab_host_path_explanation.md)
 - [GitLab CI/CD: Pipelines and Runners](gitlab_ci_explanation.md)
+
+## Cli
+
+Like the `gh` command for GitHub, GitLab provides the `glab` CLI:
+- https://docs.gitlab.com/cli/
+
+To authenticate:
+
+```bash
+glab auth login
+```
+
+After logging in, you can use glab for various tasks.
+
+For example, you can ask an LLM to generate code or scripts that use glab to create a release, manage issues, interact with merge requests, and more.
