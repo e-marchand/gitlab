@@ -1,5 +1,7 @@
 # 🦊 GitLab
 
+🇫🇷 [Version française](README.fr.md)
+
 Quick reference for managing GitLab tokens, releases, and package-hosted assets.
 
 ## Index
